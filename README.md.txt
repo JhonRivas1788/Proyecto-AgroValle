@@ -32,7 +32,7 @@ Nombre completo                            | Rol                | GitHub
 Jhon Stiven Rivas Angulo                   | Scrum Master       | [@JhonRivas1788]
 Reinaldo Daniel Niño Belalcazar            | Product Owner      | [@rdninoEstudiante]
 Kevin Andres Rosero Mestizo                | Desarrollador      | [@KevinnRosero]
-
+Luis Eduardo Vera Orejuela                 | Desarrollador      | [@leduardovera]  
 
 --------------------------------------------------------------------
 3. ESTRATEGIA DE RAMIFICACION Y JUSTIFICACION
