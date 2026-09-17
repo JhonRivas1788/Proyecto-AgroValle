@@ -1,0 +1,8 @@
+# Definition of Done (DoD) - AgroValle Connect
+
+Una tarea o historia de usuario se considera oficialmente "Terminada" (Done) al cumplir con:
+
+- [ ] **Compilación**: El código compila correctamente en Java 17 sin errores.
+- [ ] **Estilo**: Pasa las validaciones de Checkstyle.
+- [ ] **Control de Versiones**: Uso estricto de Conventional Commits y Pull Requests aprobados por pares.
+- [ ] **BDD**: Criterios de aceptación estructurados en formato Given-When-Then.
