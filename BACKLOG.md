@@ -1,3 +1,29 @@
+# Product Backlog - AgroValle Connect
+
+## Resumen de Priorización (MoSCoW) y Estimación (Story Points - Fibonacci)
+
+Estimado por el equipo mediante Planning Poker. Escala: 1, 2, 3, 5, 8, 13.
+Leyenda MoSCoW: **M** = Must Have, **S** = Should Have, **C** = Could Have, **W** = Won't Have (este ciclo).
+
+| ID | Historia de Usuario | Prioridad MoSCoW | Story Points |
+|---|---|---|---|
+| HU-01 | Registro de Agricultores | M | 5 |
+| HU-02 | Publicación de Productos | M | 5 |
+| HU-03 | Visualización de Precios Regionales | S | 5 |
+| HU-04 | Filtro de Categorías y Municipios | S | 3 |
+| HU-05 | Contacto Directo con el Agricultor | S | 3 |
+| HU-06 | Actualización de Perfil de Agricultor | C | 3 |
+| HU-07 | Autenticación e Inicio de Sesión | M | 8 |
+| HU-08 | Carrito de Compras | M | 8 |
+| HU-09 | Emisión de Orden de Compra | M | 8 |
+| HU-10 | Notificación de Estado de Pedido | S | 5 |
+| HU-11 | Confirmación de Alistamiento y Ruta | S | 5 |
+| HU-12 | Seguimiento del Pedido | S | 3 |
+| HU-13 | Historial de Ventas | C | 3 |
+| HU-14 | Calificación del Agricultor | C | 3 |
+| HU-15 | Gestión de Usuarios (Administrador) | W | 5 |
+| **Total** | | | **72 pts** |
+
 --------------------------------------------------------------------
 HU-01: Registro de Agricultores
 --------------------------------------------------------------------

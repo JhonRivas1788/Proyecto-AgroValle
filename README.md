@@ -3,6 +3,11 @@ PROYECTO: AGROVALLE CONNECT
 Documentacion del Repositorio
 ====================================================================
 
+![CI](https://github.com/JhonRivas1788/Proyecto-AgroValle/actions/workflows/ci.yml/badge.svg)
+![Java](https://img.shields.io/badge/Java-17-orange)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.1.1-brightgreen)
+![Cobertura mínima](https://img.shields.io/badge/coverage-60%25%20min-yellow)
+
 --------------------------------------------------------------------
 1. DECLARACION DE LA VISION DEL PRODUCTO
 --------------------------------------------------------------------

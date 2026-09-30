@@ -7,7 +7,7 @@
     <property name="severity" value="error"/>
     <property name="fileExtensions" value="java, properties, xml"/>
     <module name="BeforeExecutionExclusionFileFilter">
-        <property name="filePattern" value="[\\/]target[\\/].*$"/>
+        <property name="fileNamePattern" value="[\\/]target[\\/].*$"/>
     </module>
     <module name="TreeWalker">
         <module name="ConstantName"/>

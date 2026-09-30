@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+echo "Ejecutando validaciones de calidad (DoD) antes del commit..."
+
+./mvnw checkstyle:check
+if [ $? -ne 0 ]; then
+  echo "Commit bloqueado: Checkstyle encontro advertencias de estilo."
+  exit 1
+fi
+
+./mvnw test
+if [ $? -ne 0 ]; then
+  echo "Commit bloqueado: hay pruebas unitarias fallando."
+  exit 1
+fi
+
+echo "Validaciones superadas. Continuando con el commit."

@@ -11,20 +11,36 @@
 	<groupId>com.agrovalle</groupId>
 	<artifactId>Proyecto-AgroValle</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name/>
-	<description/>
-	<url/>
-	<licenses>
-		<license/>
-	</licenses>
+	<name>AgroValle Connect</name>
+	<description>Plataforma web (Java 17 / Spring Boot) que conecta la oferta agrícola del Valle del Cauca con la demanda comercial urbana, eliminando intermediación innecesaria.</description>
+	<url>https://github.com/JhonRivas1788/Proyecto-AgroValle</url>
 	<developers>
-		<developer/>
+		<developer>
+			<name>Jhon Stiven Rivas Angulo</name>
+			<id>JhonRivas1788</id>
+			<roles><role>Scrum Master</role></roles>
+		</developer>
+		<developer>
+			<name>Reinaldo Daniel Niño Belalcazar</name>
+			<id>rdninoEstudiante</id>
+			<roles><role>Product Owner</role></roles>
+		</developer>
+		<developer>
+			<name>Kevin Andres Rosero Mestizo</name>
+			<id>KevinnRosero</id>
+			<roles><role>Developer</role></roles>
+		</developer>
+		<developer>
+			<name>Luis Eduardo Vera Orejuela</name>
+			<id>leduardovera</id>
+			<roles><role>Developer</role></roles>
+		</developer>
 	</developers>
 	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
+		<connection>scm:git:git@github.com:JhonRivas1788/Proyecto-AgroValle.git</connection>
+		<developerConnection>scm:git:git@github.com:JhonRivas1788/Proyecto-AgroValle.git</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/JhonRivas1788/Proyecto-AgroValle</url>
 	</scm>
 	<properties>
 		<java.version>17</java.version>
@@ -47,6 +63,72 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
+			<!-- Checkstyle: cero advertencias de estilo (Google Java Style) -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<version>3.3.1</version>
+				<configuration>
+					<configLocation>checkstyle.xml</configLocation>
+					<encoding>UTF-8</encoding>
+					<consoleOutput>true</consoleOutput>
+					<failsOnError>true</failsOnError>
+					<violationSeverity>warning</violationSeverity>
+				</configuration>
+				<executions>
+					<execution>
+						<id>checkstyle-check</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<!-- JaCoCo: cobertura mínima del 60% exigida por el DoD -->
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.12</version>
+				<executions>
+					<execution>
+						<id>prepare-agent</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>report</id>
+						<phase>test</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>jacoco-check</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<rule>
+									<element>BUNDLE</element>
+									<limits>
+										<limit>
+											<counter>LINE</counter>
+											<value>COVEREDRATIO</value>
+											<minimum>0.60</minimum>
+										</limit>
+									</limits>
+								</rule>
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
