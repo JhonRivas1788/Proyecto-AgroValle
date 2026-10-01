@@ -10,4 +10,10 @@ class ProyectoAgroValleApplicationTests {
 	void contextLoads() {
 	}
 
+	@Test
+	void mainArrancaSinErrores() {
+		ProyectoAgroValleApplication.main(new String[] {
+			"--spring.main.web-application-type=none"
+		});
+	}
 }
