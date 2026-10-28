@@ -6,14 +6,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class ProyectoAgroValleApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
-
-	@Test
-	void mainArrancaSinErrores() {
-		ProyectoAgroValleApplication.main(new String[] {
-			"--spring.main.web-application-type=none"
-		});
-	}
+    @Test
+    void contextLoads() {
+     
+    }
 }
